@@ -11,8 +11,14 @@
 #import "Oct18AppDelegate.h"
 
 int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([Oct18AppDelegate class]));
+{    
+        @autoreleasepool {
+            NSLog(@"This is output produced by NSLog.");
+            NSLog(@"iOS version %@", [UIDevice currentDevice].systemVersion);
+            
+            int i = 10;
+            NSLog(@"i == %d", i);
+            
+            return UIApplicationMain(argc, argv, nil, NSStringFromClass([Oct18AppDelegate class]));
+        }
     }
-}
